@@ -12,4 +12,3 @@ autocmd FileType cpp nnoremap <C-k>b :CMakeBuild<CR>
 autocmd FileType cpp nnoremap <C-k><C-b> :CMakeBuild<CR>
 autocmd FileType cpp nnoremap <C-k><C-t> :CMakeTest<CR>
 autocmd FileType cpp nnoremap <F5> :CMakeBuildRun<CR>
-

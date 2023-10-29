@@ -17,4 +17,3 @@ command! CargoConfig e Cargo.toml
 autocmd FileType rust nnoremap <C-k>b :CargoBuild<CR>
 autocmd FileType rust nnoremap <C-k><C-b> :CargoBuild<CR>
 autocmd FileType rust nnoremap <F5> :CargoBuildRun<CR>
-

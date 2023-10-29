@@ -12,4 +12,3 @@ colorscheme one
 "exec "set background=".$BACKGROUND
 
 set cc=81
-

@@ -41,4 +41,3 @@ nmap <C-k><C-r> <Plug>(coc-rename)
 
 xmap <leader>f <Plug>(coc-format-selected)
 nmap <leader>f <Plug>(coc-format-selected)
-

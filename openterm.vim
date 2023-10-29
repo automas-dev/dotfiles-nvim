@@ -14,4 +14,3 @@ function! OpenVTerminal()
     vsplit term://bash
 endfunction
 nnoremap <C-k><C-n> : call OpenVTerminal()<CR>
-

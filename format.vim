@@ -14,4 +14,3 @@ autocmd FileType c++ setlocal equalprg=clang-format
 autocmd FileType cpp setlocal equalprg=clang-format
 autocmd FileType python setlocal equalprg=autopep8\ -
 autocmd FileType rust setlocal equalprg=rustfmt
-

@@ -5,6 +5,9 @@ function! FormatFile()
     call setpos('.', save_pos)
 endfunction
 
+xmap <leader>f <Plug>(coc-format-selected)
+nmap <leader>f <Plug>(coc-format-selected)
+
 nnoremap <C-f> :call FormatFile()<CR>
 inoremap <C-f> <Esc>:call FormatFile()<CR>a
 nnoremap<C-k><C-d> :call FormatFile()<CR>

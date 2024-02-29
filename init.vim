@@ -2,8 +2,6 @@
 " ~/.config/nvim/init.vim
 "
 
-set number
-
 call plug#begin('~/.vim/plugged')
     " Plugin Section
 
@@ -40,6 +38,9 @@ call plug#begin('~/.vim/plugged')
 
     " MdBook live preview
     Plug 'twh2898/vim-mdbook'
+
+    " Kmonad
+    Plug 'kmonad/kmonad-vim'
 call plug#end()
 
 let g:coc_global_extensions = [
@@ -82,7 +83,7 @@ let s:deps = [
             \]
 
 for dep in s:deps
-    call util#Requires(s:cwd, dep)
+    call util#Requires(s:cwd, util#PathJoin("lib", dep))
 endfor
 
 set hidden
@@ -132,7 +133,11 @@ autocmd FileType python setlocal spell
 " Persistent  undo
 if has('persistent_undo')
     set undofile
-    set undodir=$HOME/.vim/undo
+    if has('nvim')
+        let &undodir = util#PathJoin(s:cwd, "nundo")
+    else
+        let &undodir = util#PathJoin(s:cwd, "undo")
+    endif
 endif
 
 " Yank to system clipboard

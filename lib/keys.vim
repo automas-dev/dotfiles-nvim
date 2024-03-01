@@ -66,7 +66,6 @@ command! RemoveWhitespace :%s/\s\+$//e
 nnoremap <leader>sw :RemoveWhitespace<CR>
 nnoremap <C-k><C-s> :RemoveWhitespace<CR>
 
-
 command! GenBuild exec "![ -f build ] && ./build || ./%"
 command! GenRun exec "![ -f run ] && ./run || ./%"
 command! GenBuildRun exec "![ -f build ] && ./build || [ -f run ] && ./run || ./%"
@@ -75,6 +74,10 @@ command! GenBuildRun exec "![ -f build ] && ./build || [ -f run ] && ./run || ./
 nnoremap <C-k>b :wa <CR> :GenBuild<CR>
 nnoremap <C-k><C-b> :wa<CR> :GenBuild<CR>
 nnoremap <F5> :wa<CR> :GenBuildRun<CR>
+
+" now it is possible to paste many times over selected text
+xnoremap <expr> p 'pgv"'.v:register.'y`>'
+xnoremap <expr> P 'Pgv"'.v:register.'y`>'
 
 " Auto close
 

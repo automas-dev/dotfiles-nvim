@@ -9,4 +9,4 @@ ln -sfT "$HOME/.config/nvim" .vim
 ln -sfT "$HOME/.config/nvim/init.vim" .vimrc
 
 nvim +'PlugInstall --sync' +qa
-nvim +'CocInstall' +qa
+nvim +'CocUpdate' +qa

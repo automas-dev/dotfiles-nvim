@@ -1,5 +1,6 @@
 {
     "snippets.userSnippetsDirectory": "~/.config/nvim/snips",
+    "suggest.noselect": false,
     "coc.preferences.colorSupport": true,
     "python.linting.mypyEnabled": false,
     "python.linting.mypyArgs": [
@@ -48,5 +49,5 @@
             }
         }
     },
-    "snippets.ultisnips.pythonPrompt": false
+    "snippets.ultisnips.pythonPrompt": true
 }

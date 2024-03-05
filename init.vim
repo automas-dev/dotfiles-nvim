@@ -41,6 +41,9 @@ call plug#begin('~/.vim/plugged')
 
     " Kmonad
     Plug 'kmonad/kmonad-vim'
+
+    " Rainbow CSV
+    Plug 'mechatroner/rainbow_csv'
 call plug#end()
 
 let g:coc_global_extensions = [

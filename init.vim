@@ -44,6 +44,9 @@ call plug#begin('~/.vim/plugged')
 
     " Rainbow CSV
     Plug 'mechatroner/rainbow_csv'
+
+    " Bullets
+    Plug 'bullets-vim/bullets.vim'
 call plug#end()
 
 let g:coc_global_extensions = [
@@ -79,6 +82,7 @@ let s:deps = [
             \'coc',
             \'snip',
             \'format',
+            \'bullet',
             \'cpp',
             \'lua',
             \'rust',

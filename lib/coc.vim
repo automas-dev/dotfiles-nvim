@@ -18,9 +18,10 @@ endif
 " inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
 "     \ : "\<C-g>u\<CR>\<C-r>=coc#on_enter()\<CR>"
 
-inoremap <silent><expr> <CR>
-    \ coc#pum#visible() ? coc#pum#confirm() :
-    \ "\<CR>"
+" This was the working one, but I got annoyed in cases were I wanted newline
+"inoremap <silent><expr> <CR>
+"    \ coc#pum#visible() ? coc#pum#confirm() :
+"    \ "\<CR>"
 
 " Use `[g` and `]g` to navigate diagnostics
 " Use `:CocDiagnostics` to get all diagnostics of current buffer in location list

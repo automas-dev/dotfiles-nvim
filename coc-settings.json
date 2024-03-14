@@ -9,8 +9,20 @@
         "--show-column-numbers",
         "--strict-optional"
     ],
-    "python.linting.pydocstyleEnabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--ignore=F841,W503,E741,F401,D107,BLK100,D102"
+    ],
     "python.linting.pylintEnabled": true,
+    "pyright.inlayHints.functionReturnTypes": false,
+    "pyright.inlayHints.variableTypes": false,
+    "pyright.inlayHints.parameterTypes": false,
+    "python.formatting.provider": "autopep8",
+    "python.formatting.autopep8Args": [
+        "--select=E,W",
+        "--ignore=W503,E121",
+        "--max-line-length", "241"
+    ],
     "languageserver": {
         "ccls": {
             "command": "ccls",

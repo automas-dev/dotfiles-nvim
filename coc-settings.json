@@ -2,6 +2,7 @@
     "snippets.userSnippetsDirectory": "~/.config/nvim/snips",
     "suggest.noselect": true,
     "coc.preferences.colorSupport": true,
+    "python.pythonPath": "/usr/bin/python3",
     "python.linting.mypyEnabled": false,
     "python.linting.mypyArgs": [
         "--ignore-missing-imports",

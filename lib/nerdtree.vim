@@ -9,3 +9,9 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 " Toggle
 nnoremap <silent> <C-b> :NERDTreeToggle<CR>
+
+" Refresh when entering nerd tree
+autocmd BufEnter NERD_tree_* | execute 'normal R'
+
+" Refresh on file write
+"autocmd BufWritePost * NERDTreeFocus | execute 'normal R' | wincmd p

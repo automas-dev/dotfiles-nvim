@@ -98,6 +98,9 @@ set hidden
 set nobackup
 set nowritebackup
 
+set nofixeol
+set nofixendofline
+
 set updatetime=300
 
 set shortmess+=c

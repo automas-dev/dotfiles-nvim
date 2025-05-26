@@ -19,25 +19,25 @@ call plug#begin('~/.vim/plugged')
 
     " C++
     Plug 'jackguo380/vim-lsp-cxx-highlight'
-    Plug 'twh2898/vim-cmake'
+    Plug 'automas-dev/vim-cmake'
 
     " Toml
     Plug 'cespare/vim-toml'
 
     " Lua
-    Plug 'twh2898/vim-lua'
+    Plug 'automas-dev/vim-lua'
 
     " GLSL
     Plug 'tikhomirov/vim-glsl'
 
     " Scarpet
-    Plug 'twh2898/vim-scarpet'
+    Plug 'automas-dev/vim-scarpet'
 
     " Fugitive
     Plug 'tpope/vim-fugitive'
 
     " MdBook live preview
-    Plug 'twh2898/vim-mdbook'
+    Plug 'automas-dev/vim-mdbook'
 
     " Kmonad
     Plug 'kmonad/kmonad-vim'

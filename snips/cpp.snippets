@@ -19,3 +19,12 @@ static void BM_$1(benchmark::State & state) {
 }
 BENCHMARK(BM_$1);
 endsnippet
+
+snippet header "C style header" i
+# ifndef $1_H
+#define $1_H
+
+$2
+
+#endif // $1_H
+endsnippet
